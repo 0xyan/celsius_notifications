@@ -44,4 +44,4 @@ def check_token_transfer():
         time.sleep(60)
 
   
- 
+ check_token_transfer()
