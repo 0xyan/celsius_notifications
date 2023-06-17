@@ -30,4 +30,4 @@ def check_ada_transfer():
 
         time.sleep(60)
  
-check_token_transfer()
+check_ada_transfer()
