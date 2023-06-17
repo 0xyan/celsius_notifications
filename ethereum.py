@@ -27,7 +27,7 @@ def send_bot(text):
 
   
 def check_token_transfer():
-    last_block = 17497063
+    last_block = 16497063
     while True:
         for contract, addresses in CONTRACTS_ADDRESSES.items():
             for address in addresses:
