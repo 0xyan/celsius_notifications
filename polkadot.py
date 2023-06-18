@@ -22,7 +22,6 @@ def check_dot_transfer():
         for address in DOT_ADDRESSES:
             response = requests.get(f"https://polkadot.api.subscan.io/api/scan/transfers", params={"row": 100, "address": address}, headers={"X-API-Key": SUBSCAN_API})
             response_json = response.json()
-            print(response_json)
 
             for tx in response_json['data']['transfers']:
                 if int(tx['block_num']) > last_block:
